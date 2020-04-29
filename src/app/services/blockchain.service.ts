@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Blockchain } from 'StevenCoin/src/blockchain';
+import { BlockChain } from 'StevenCoin/src/blockchain';
 import EC from "elliptic";
 
 @Injectable({
@@ -7,7 +7,7 @@ import EC from "elliptic";
 })
 export class BlockchainService {
   
-  public blockchainInstance = new Blockchain();
+  public blockchainInstance = new BlockChain();
   public walletKeys = [];
 
   constructor() { 
