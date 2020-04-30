@@ -24,6 +24,7 @@ export class CreateTransactionComponent implements OnInit {
     this.newTx.fromAddress = this.walletKey.publicKey;
     this.newTx.signTransaction(this.walletKey.keyObj);
     this.blockchainService.addTransaction(this.newTx);
+    console.log(this.blockchainService.getPendingTransactions());
 
     this.newTx = new Transaction();
   }
