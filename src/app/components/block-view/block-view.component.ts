@@ -10,11 +10,17 @@ export class BlockViewComponent implements OnInit {
   
   @Input() 
   public block;
+
+  @Input()
   public selectedBlock;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  isSelected(){
+    return this.block === this.selectedBlock;
   }
 
 }
