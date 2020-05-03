@@ -4,7 +4,7 @@
         [transactions]="pendingTransactions"
     >
     </app-transactions-table>
-    <button class="btn btn-primary" (click)="minePendingTransactions()" >
+    <button class="btn btn-primary" [attr.disabled]="pendingTransactions.length === 0 ? 'disabled': null" (click)="minePendingTransactions()" >
         Start mining
     </button>
 </div>
