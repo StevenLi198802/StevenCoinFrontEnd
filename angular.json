@@ -60,6 +60,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "zh-Hans":{
+              "aot":true,
+              "outputPath":"dist/StevenCoinFrontEnd",
+              "i18nFile":"locale/messages.zh-Hans.xlf",
+              "i18nFormat":"xlf",
+              "i18nLocale":"zh-Hans",
+              "i18nMissingTranslation":"error"
             }
           }
         },
@@ -71,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "StevenCoinFrontEnd:build:production"
+            },
+            "zh-Hans":{
+              "browserTarget":"StevenCoinFrontEnd:build:zh-Hans"
             }
           }
         },
