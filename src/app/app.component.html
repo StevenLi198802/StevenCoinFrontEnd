@@ -2,10 +2,13 @@
   <a class="navbar-brand" routerLink="/" i18n="SiteTitle|This is the site title.@@SiteTitle">
     StevenCoin
   </a>
-  <ng-template ngFor let-lang [ngForOf]="languages">
-    <span *ngIf="lang.code !== localeId"><a href="/{{lang.code}}/">{{lang.label}}</a></span>
-    <span *ngIf="lang.code === localeId">{{lang.label}}</span>
-  </ng-template>
+  <ul class="nav justify-content-end">
+    <ng-template ngFor let-lang [ngForOf]="languages">
+      <li class="nav-item">
+        <a class="nav-link" [class.disabled]="lang.code === localeId ? 'disabled' : null " href="/{{lang.code}}/">{{lang.label}}</a>
+      </li>
+    </ng-template>
+  </ul>
   <div>
     <button class="btn btn-outline-light"  routerLink="/settings" i18n="@@Settings">Settings</button>
     &nbsp;
