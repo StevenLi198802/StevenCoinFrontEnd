@@ -63,10 +63,20 @@
             },
             "zh-Hans":{
               "aot":true,
-              "outputPath":"dist/StevenCoinFrontEnd",
+              "outputPath":"dist/StevenCoinFrontEnd-zh-Hans",
+              "baseHref":"zh-Hans",
               "i18nFile":"locale/messages.zh-Hans.xlf",
               "i18nFormat":"xlf",
               "i18nLocale":"zh-Hans",
+              "i18nMissingTranslation":"error"
+            },
+            "en-US":{
+              "aot":true,
+              "outputPath":"dist/StevenCoinFrontEnd-en-US",
+              "baseHref":"/en-US/",
+              "i18nFile":"locale/messages.xlf",
+              "i18nFormat":"xlf",
+              "i18nLocale":"en-US",
               "i18nMissingTranslation":"error"
             }
           }
@@ -82,6 +92,9 @@
             },
             "zh-Hans":{
               "browserTarget":"StevenCoinFrontEnd:build:zh-Hans"
+            },
+            "en-US":{
+              "browserTarget":"StevenCoinFrontEnd:build:en-US"
             }
           }
         },

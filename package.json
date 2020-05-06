@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-i18n:zh-Hans": "ng build --configuration=production,zh-Hans",
+    "build-i18n:en-US": "ng build --configuration=production,en-US",
+    "build-i18n": "npm run build-i18n:en-US && npm run build-i18n:zh-Hans"
   },
   "private": true,
   "dependencies": {
