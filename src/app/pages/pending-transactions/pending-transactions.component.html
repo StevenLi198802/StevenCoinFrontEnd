@@ -1,10 +1,10 @@
 <div class="container">
-    <h1>Pending transactions</h1>
+    <h1 i18n>Pending transactions</h1>
     <app-transactions-table
         [transactions]="pendingTransactions"
     >
     </app-transactions-table>
-    <button class="btn btn-primary" [attr.disabled]="pendingTransactions.length === 0 ? 'disabled': null" (click)="minePendingTransactions()" >
+    <button class="btn btn-primary" [attr.disabled]="pendingTransactions.length === 0 ? 'disabled': null" (click)="minePendingTransactions()" i18n>
         Start mining
     </button>
 </div>

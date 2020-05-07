@@ -1,14 +1,14 @@
-<p *ngIf="transactions.length === 0">No transactions here.</p>
+<p *ngIf="transactions.length === 0" i18n>No transactions here.</p>
 
 <table class="table table-hover table-striped" *ngIf="transactions.length > 0">
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">From</th>
-            <th scope="col">To</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Timestamp</th>
-            <th scope="col">Valid?</th>
+            <th scope="col" i18n>From</th>
+            <th scope="col" i18n>To</th>
+            <th scope="col" i18n>Amount</th>
+            <th scope="col" i18n>Timestamp</th>
+            <th scope="col" i18n>Valid?</th>
         </tr>
     </thead>
     <tbody>
@@ -16,7 +16,7 @@
             <td>{{index}}</td>
             <td class="text-truncate" style="max-width: 100px;">
                 {{tx.fromAddress}}
-                <span *ngIf="tx.fromAddress === null">System</span>
+                <span *ngIf="tx.fromAddress === null" i18n>System</span>
             </td>
             <td class="text-truncate" style="max-width: 100px;">
                 {{tx.toAddress}}
@@ -25,7 +25,7 @@
                 {{tx.amount}}
                 <span *ngIf="tx.fromAddress === null" class="text-muted">
                     <br>
-                    <small>(Block reward)</small>
+                    <small i18n>(Block reward)</small>
                 </span>
             </td>
             <td>

@@ -5,7 +5,7 @@
       <trans-unit id="SiteTitle" datatype="html">
         <source>
     StevenCoin
-  </source><target state="new">
+  </source><target state="final">
     斯蒂芬币
   </target>
         <context-group purpose="location">
@@ -16,17 +16,185 @@
         <note priority="1" from="meaning">SiteTitle</note>
       </trans-unit>
       <trans-unit id="Settings" datatype="html">
-        <source>Settings</source><target state="new">设置</target>
+        <source>Settings</source><target state="final">设置</target>
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit>
       <trans-unit id="CreateTransaction" datatype="html">
-        <source>Create transaction</source><target state="new">创建交易</target>
+        <source>Create transaction</source><target state="final">创建交易</target>
         
       <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">8</context></context-group></trans-unit>
       <trans-unit id="PendingTransactions" datatype="html">
-        <source>Pending transactions</source><target state="new">待处理交易</target>
+        <source>Pending transactions</source><target state="final">待处理交易</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit><trans-unit id="46e12e6acecfa4e2ab745a3fccdb005f8d15b5f8" datatype="html">
+        <source>Blocks on chain</source><target state="final">链上区块</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blockchain-viewer/blockchain-viewer.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="5c3158a082c163513e8a697a206c2245a2e83fc7" datatype="html">
+        <source>Each card represents a block on the chain. Click on a block to see the transactions stored inside.</source><target state="final">每张卡片代表一个区块，点击可以查询该区块所含交易</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blockchain-viewer/blockchain-viewer.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="497fe30d35aa3b59c76017b6bfa94357adfa661c" datatype="html">
+        <source>Transactions inside block</source><target state="final">区块中所包含的交易数据</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blockchain-viewer/blockchain-viewer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit><trans-unit id="7f5d0c10614e8a34f0e2dad33a0568277c50cf69" datatype="html">
+        <source>Block</source><target state="final">区块</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-view/block-view.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="af446604eee8a9d4de335f238f827f7f82f354f1" datatype="html">
+        <source>(Genesis block)</source><target state="final">（创世区块）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-view/block-view.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="960cd598cbd85edb0a254ff3e59574d2c5cb888c" datatype="html">
+        <source>Hash</source><target state="final">哈希值</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-view/block-view.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit><trans-unit id="380eb53859dc651d8a3db452a1c0eade83f804d3" datatype="html">
+        <source>Hash of previous block</source><target state="final">前一个区块的哈希值</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-view/block-view.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit><trans-unit id="a6bb63d98a8a67689070a79ccf13960c25b572ef" datatype="html">
+        <source>Nonce</source><target state="final">随机数</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-view/block-view.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit><trans-unit id="07193288a0312875e18f38c3a2486b927a15520a" datatype="html">
+        <source>Timestamp</source><target state="final">时间戳</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-view/block-view.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="1134c7b4e1a42637adffdef447bf38ffb95bdb54" datatype="html">
+        <source>No transactions here.</source><target state="final">没有交易数据。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit><trans-unit id="d5e0dbc9fd4651759df915cdc6ba26fe3f17475f" datatype="html">
+        <source>From</source><target state="final">发送地址</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="63c9c3aa536dbd11120ae8feab62186c47838028" datatype="html">
+        <source>To</source><target state="final">接收地址</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit><trans-unit id="dfc2fb58e2a04ed944a4bd80f0a2087775134068" datatype="html">
+        <source>Amount</source><target state="final">金额</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/create-transaction/create-transaction.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit><trans-unit id="ed1253ff917f77f5a6f24429fb71c8ab55814269" datatype="html">
+        <source>Valid?</source><target state="final">是否有效?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit><trans-unit id="8011e20c5bbe51602d459a860fbf29b599b55edd" datatype="html">
+        <source>System</source><target state="final">系统</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit><trans-unit id="fc0f04a55d4d9bd695e2a136326d4ec48d929d89" datatype="html">
+        <source>(Block reward)</source><target state="final">（区块奖励）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transactions-table/transactions-table.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit><trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
+        <source>Settings</source><target state="final">设置</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/settings/settings.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="25148835d92465353fc5fe8897c27d5369978e5a" datatype="html">
+        <source>Difficulty</source><target state="final">难度系数</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/settings/settings.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="031a9360a4536919713ec24db96a72e80fddd340" datatype="html">
+        <source>Mining reward</source><target state="final">挖矿奖励</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/settings/settings.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="c3daca3f845ade237830d5f25cd5ee7fe0b4c385" datatype="html">
+        <source>Create transaction</source><target state="final">创建交易</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/create-transaction/create-transaction.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="dcbaad4a28223193d78fc3190c4d943876d3ec85" datatype="html">
+        <source>Transfer some money to someone!</source><target state="final">转账</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/create-transaction/create-transaction.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="79202c41e36d69615e54cd6dd9641c491325dd7f" datatype="html">
+        <source>From address</source><target state="final">发送地址</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/create-transaction/create-transaction.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit><trans-unit id="9378f8d067b13c38d6fe218ffef954c80bc1865d" datatype="html">
+        <source>To address</source><target state="final">接收地址</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/create-transaction/create-transaction.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="e62798189ba3b9bdd8c8091dd28ece918915e47c" datatype="html">
+        <source>Sign &amp; create transaction</source><target state="final">数字签名创建交易</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/create-transaction/create-transaction.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit><trans-unit id="0216619baf76caeee92036b54eab6c9bb21fba97" datatype="html">
+        <source>Pending transactions</source><target state="final">待处理交易</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/pending-transactions/pending-transactions.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit><trans-unit id="0ba1297494373e090d6397097dafefa2d3194c41" datatype="html">
+        <source>
+        Start mining
+    </source><target state="final">
+        开始挖矿
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/pending-transactions/pending-transactions.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
