@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "",
             "outputPath": "dist/StevenCoinFrontEnd",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -61,32 +62,19 @@
                 }
               ]
             },
-            "zh-Hans":{
-              "aot":true,
-              "outputPath":"dist/StevenCoinFrontEnd-zh-Hans",
-              "baseHref":"/zh-Hans/",
-              "i18nFile":"locale/messages.zh-Hans.xlf",
-              "i18nFormat":"xlf",
-              "i18nLocale":"zh-Hans",
-              "i18nMissingTranslation":"error"
+            "zh-Hans": {
+              "aot": true,
+              "outputPath": "dist/StevenCoinFrontEnd-zh-Hans",
+              "i18nFile": "src/i18n/messages.zh-Hans.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh-Hans"
             },
-            "en-US":{
-              "aot":true,
-              "outputPath":"dist/StevenCoinFrontEnd-en-US",
-              "baseHref":"/en-US/",
-              "i18nFile":"locale/messages.en-US.xlf",
-              "i18nFormat":"xlf",
-              "i18nLocale":"en-US",
-              "i18nMissingTranslation":"error"
-            },
-            "default":{
-              "aot":true,
-              "outputPath":"dist/",
-              "baseHref":"",
-              "i18nFile":"locale/messages.en-US.xlf",
-              "i18nFormat":"xlf",
-              "i18nLocale":"en-US",
-              "i18nMissingTranslation":"error"
+            "ja-JP": {
+              "aot": true,
+              "outputPath": "dist/StevenCoinFrontEnd-ja-JP",
+              "i18nFile": "src/i18n/messages.ja-JP.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ja-JP"
             }
           }
         },
@@ -99,14 +87,11 @@
             "production": {
               "browserTarget": "StevenCoinFrontEnd:build:production"
             },
-            "zh-Hans":{
-              "browserTarget":"StevenCoinFrontEnd:build:zh-Hans"
+            "zh-Hans": {
+              "browserTarget": "StevenCoinFrontEnd:build:zh-Hans"
             },
-            "en-US":{
-              "browserTarget":"StevenCoinFrontEnd:build:en-US"
-            },
-            "default":{
-              "browserTarget":"StevenCoinFrontEnd:build:default"
+            "ja-JP": {
+              "browserTarget": "StevenCoinFrontEnd:build:ja-JP"
             }
           }
         },
@@ -157,8 +142,25 @@
               "devServerTarget": "StevenCoinFrontEnd:serve:production"
             }
           }
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {
+            "xliffmergeOptions": {
+              "i18nFormat": "xlf",
+              "srcDir": "src/i18n",
+              "genDir": "src/i18n",
+              "defaultLanguage": "en-US",
+              "languages": [
+                "en-US",
+                "zh-Hans",
+                "ja-JP"
+              ]
+            }
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "StevenCoinFrontEnd"
 }

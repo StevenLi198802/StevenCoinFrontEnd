@@ -1,14 +1,14 @@
 <nav class="navbar narbar-dark bg-dark">
   <a class="navbar-brand" routerLink="/" i18n="SiteTitle|This is the site title.@@SiteTitle">
     StevenCoin
-  </a>  
+  </a>
   <div>
     <button class="btn btn-outline-light"  routerLink="/settings" i18n="@@Settings">Settings</button>
     &nbsp;
     <button class="btn btn-outline-light" routerLink="/new/transaction" i18n="@@CreateTransaction">Create transaction</button>
     &nbsp;
     <button class="btn btn-outline-light" routerLink="/new/transaction/pending" i18n="@@PendingTransactions">Pending transactions</button>
-  </div>
+  </div>  
   <ul class="nav justify-content-end">
     <ng-template ngFor let-lang [ngForOf]="languages">
       <li class="nav-item">

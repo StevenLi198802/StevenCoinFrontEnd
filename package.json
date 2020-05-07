@@ -8,10 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-i18n:zh-Hans": "ng build --configuration=production,zh-Hans",
-    "build-i18n:en-US": "ng build --configuration=production,en-US",
-    "build-i18n:default": "ng build --configuration=production,default",
-    "build-i18n": "npm run build-i18n:default && npm run build-i18n:zh-Hans && npm run build-i18n:en-US"
+    "extract-i18n": "ng xi18n StevenCoinFrontEnd --i18n-format xlf --output-path src/i18n --i18n-locale en-US && ng run StevenCoinFrontEnd:xliffmerge",
+    "start-zh-Hans": "ng serve --configuration=zh-Hans",
+    "start-ja-JP": "ng serve --configuration=ja-JP"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +23,7 @@
     "@angular/platform-browser": "~9.1.3",
     "@angular/platform-browser-dynamic": "~9.1.3",
     "@angular/router": "~9.1.3",
+    "@ngx-i18nsupport/tooling": "^8.0.3",
     "rxjs": "~6.5.4",
     "stevencoin": "https://github.com/StevenLi198802/StevenCoin.git",
     "tslib": "^1.10.0",
@@ -34,6 +34,7 @@
     "@angular/cli": "~9.1.3",
     "@angular/compiler-cli": "~9.1.3",
     "@angular/language-service": "~9.1.3",
+    "@ngx-i18nsupport/ngx-i18nsupport": "^1.1.6",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
