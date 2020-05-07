@@ -69,12 +69,12 @@
               "i18nFormat": "xlf",
               "i18nLocale": "zh-Hans"
             },
-            "ja-JP": {
+            "ja": {
               "aot": true,
-              "outputPath": "dist/StevenCoinFrontEnd-ja-JP",
-              "i18nFile": "src/i18n/messages.ja-JP.xlf",
+              "outputPath": "dist/StevenCoinFrontEnd-ja",
+              "i18nFile": "src/i18n/messages.ja.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "ja-JP"
+              "i18nLocale": "ja"
             }
           }
         },
@@ -90,8 +90,8 @@
             "zh-Hans": {
               "browserTarget": "StevenCoinFrontEnd:build:zh-Hans"
             },
-            "ja-JP": {
-              "browserTarget": "StevenCoinFrontEnd:build:ja-JP"
+            "ja": {
+              "browserTarget": "StevenCoinFrontEnd:build:ja"
             }
           }
         },

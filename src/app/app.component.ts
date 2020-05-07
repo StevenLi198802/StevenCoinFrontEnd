@@ -10,7 +10,8 @@ export class AppComponent {
 
   languages = [
     { code: 'en-US', label: 'English'},
-    { code: 'zh-Hans', label: '中文'}
+    { code: 'zh-Hans', label: '中文'},
+    { code: 'ja', label: '日本語'}
   ];
 
   constructor(@Inject(LOCALE_ID) public localeId: string){
