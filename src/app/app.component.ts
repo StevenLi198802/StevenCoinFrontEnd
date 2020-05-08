@@ -10,7 +10,7 @@ export class AppComponent {
 
   languages = [
     { code: 'en-US', country:'us', label: 'English'},
-    { code: 'zh-Hans', fcountrylag:'cn', label: '中文'},
+    { code: 'zh-Hans', country:'cn', label: '中文'},
     { code: 'ja', country:'jp', label: '日本語'}
   ];
 

@@ -19,11 +19,15 @@
         </li>
         <li class="nav-item dropdown">
           <ng-template ngFor let-lang [ngForOf]="languages">
-            <a *ngIf="lang.code === localeId" class="nav-link dropdown-toggle" href="/{{lang.code}}/" id="dropdown-i18n" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{lang.label}}</a>
+            <a *ngIf="lang.code === localeId" class="nav-link dropdown-toggle" href="/{{lang.code}}/" id="dropdown-i18n" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="flag-icon flag-icon-{{lang.country}}"></span> {{lang.label}}
+            </a>
           </ng-template>
-          <div class="dropdown-menu" aria-labelledby="dropdown-i18n">
+          <div class="dropdown-menu bg-dark" aria-labelledby="dropdown-i18n">
             <ng-template ngFor let-lang [ngForOf]="languages">
-              <a *ngIf="lang.code != localeId" class="dropdown-item" href="/{{lang.code}}/">{{lang.label}}</a>
+              <a *ngIf="lang.code != localeId" class="nav-link dropdown-item" href="/{{lang.code}}/">
+                <span class="flag-icon flag-icon-{{lang.country}}"></span> {{lang.label}}
+              </a>
             </ng-template>
           </div>
         </li>
