@@ -9,9 +9,9 @@ export class AppComponent {
   title = 'StevenCoinFrontEnd';
 
   languages = [
-    { code: 'en-US', label: 'English'},
-    { code: 'zh-Hans', label: '中文'},
-    { code: 'ja', label: '日本語'}
+    { code: 'en-US', country:'us', label: 'English'},
+    { code: 'zh-Hans', fcountrylag:'cn', label: '中文'},
+    { code: 'ja', country:'jp', label: '日本語'}
   ];
 
   constructor(@Inject(LOCALE_ID) public localeId: string){
